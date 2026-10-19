@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a href="#home" class="logo">M.J</a>
+
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+    <nav id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <p class="accent">WELCOME TO MY PORTFOLIO</p>
+      <h1>I'm <span>M.Jamiu</span><br>A Web Developer</h1>
+      <p>I create modern, responsive and beautiful websites.</p>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About <span class="accent">Me</span></h2>
+    <div class="card">
+      <p>
+        Hello! I'm M.Jamiu, a passionate web developer who enjoys
+        creating clean and user-friendly websites using HTML, CSS
+        and JavaScript.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My <span class="accent">Skills</span></h2>
+    <div class="grid">
+      <div class="card">
+        <h3>HTML</h3>
+        <p>Creating website structures.</p>
+      </div>
+      <div class="card">
+        <h3>CSS</h3>
+        <p>Designing attractive web pages.</p>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Making websites interactive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My <span class="accent">Projects</span></h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my work.</p>
+        <a href="#contact">Contact me →</a>
+      </div>
+      <div class="card">
+        <h3>Business Website</h3>
+        <p>A website for a business or company.</p>
+        <a href="#contact">Contact me →</a>
+      </div>
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>A modern page for a product or service.</p>
+        <a href="#contact">Contact me →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact <span class="accent">Me</span></h2>
+    <p class="description">
+      Have a project in mind? Send me a message directly on WhatsApp.
+    </p>
+
+    <form id="contactForm" class="card">
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Your email" required>
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> M.Jamiu. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/2348139301024"
+    class="whatsapp" id="whatsappBtn"
+    target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+
+</body>
+</html>
